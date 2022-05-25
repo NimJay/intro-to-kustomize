@@ -1,0 +1,22 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: my-deployment
+spec:
+  # Select the Pods that make up this Deployment.
+  selector:
+    matchLabels:
+      pods-label: my-pods
+  # Define the Pod.
+  template:
+    metadata:
+      labels:
+        pods-label: my-pods
+    spec:
+      containers:
+      - name: my-container
+        image: us-docker.pkg.dev/google-samples/containers/gke/hello-app:1.0
+        ports:
+        - containerPort: 8080
+  # Run multiple instances of the Pod.
+  replicas: 2
