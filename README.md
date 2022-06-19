@@ -11,15 +11,15 @@ Here's how you should use this repository:
 ![A diagram of 2 Pods labeled "pods-label: my-pods", in a Deployments called my-deployment, in a Service called my-service.](https://raw.githubusercontent.com/NimJay/intro-to-kustomize/main/pods-deployment-service-diagram.png)
 
 The diagram depicts the "base" set of Kubernetes resources this repository works with:
+* 1 `Service` of `type: LoadBalance` (which means the Service will get assigned a public IP address, allowing ingress).
 * 1 `Deployment` containing 2 instances (`replicas: 2`) of a `Pod`.
 * Each `Pod` just runs a Docker container of a "Hello, world!" app.
-* 1 `Service` of `type: LoadBalance` (which means the Service will generate traffic).
 
 The `Deployment` runs 2 instances (`replicas: 2`) of a `Pod`.
 
-**2.** Look at the `base/` folder.   The `Service` just
+**2.** Explore the YAML in the `base/` folder.
 
-*3.* Go through each of the other folders. Each folder contains a `kustomization.yaml` that demonstrates the use of a specific Kustomize [Transformer]() or [Generator]().
+**3.** Explore each of the other folders. Each folder contains a `kustomization.yaml` that demonstrates the use of a specific [Kustomize Transformer or Generator](https://kubectl.docs.kubernetes.io/references/kustomize/builtins/).
 
 **4.** Build each `kustomization.yaml` using the instructions below.
 
