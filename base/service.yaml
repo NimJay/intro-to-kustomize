@@ -8,7 +8,7 @@ spec:
   type: LoadBalancer
   # Select the Pods that make up this Service.
   selector:
-    pods-label: my-pods
+    pod-label: my-pod
   ports:
   - port: 80
     targetPort: 8080
