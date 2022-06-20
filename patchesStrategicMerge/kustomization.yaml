@@ -5,7 +5,7 @@ bases:
 
 # Patch my-deployment such that it uses 3 replicas instead of 2.
 # The apiVersion, kind, name, and namespace together uniquely identify the resources being updated.
-# In this case, the namespace is "default" — so it's not specified.
+# In this case, the namespace is "default" — so it's unspecified.
 patchesStrategicMerge:
 - |-
   apiVersion: apps/v1
