@@ -5,9 +5,10 @@ bases:
 
 # Patch my-deployment such that it uses 3 replicas instead of 2.
 patchesJson6902:
-- target:
+- target: # Uniquely identify the resource you want to update.
+    version: v1
     kind: Deployment
-    name: my-deployment # We're using the unique identifier.
+    name: my-deployment # Reminder: There can only be one Deployment named my-deployment in a namespace.
   patch: |-
     - op: replace
       path: /spec/replicas
