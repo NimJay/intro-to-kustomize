@@ -11,7 +11,7 @@ Here's how you should use this repository:
 ![A diagram of 2 Pods labeled "pods-label: my-pods", in a Deployments called my-deployment, in a Service called my-service.](https://raw.githubusercontent.com/NimJay/intro-to-kustomize/main/pods-deployment-service-diagram.png)
 
 The diagram depicts the "base" set of Kubernetes resources this repository works with:
-* 1 `Service` of `type: LoadBalance` which will allow public ingress.
+* 1 `Service` of `type: LoadBalancer` which will allow public ingress.
 * 1 `Deployment` containing 2 instances (`replicas: 2`) of a `Pod`.
 * Each `Pod` just runs a Docker container of a "Hello, world!" app.
 
@@ -28,7 +28,7 @@ The `Deployment` runs 2 instances (`replicas: 2`) of a `Pod`.
 
 To view the `kustomize build` output of an example, you do **not** need to install `kustomize` separately. `kustomize build` is built into `kubectl`. Use:
 ```
-kubectl kustomize -k <path-to-folder>
+kubectl kustomize <path-to-folder>
 ```
 
 ## Deploy an Example
