@@ -8,7 +8,7 @@ Here's how you should use this repository:
 
 **1.** Look at the following diagram.
 
-![A diagram of 2 Pods labeled "pods-label: my-pods", in a Deployments called my-deployment, in a Service called my-service.](https://raw.githubusercontent.com/NimJay/intro-to-kustomize/main/pods-deployment-service-diagram.png)
+![A diagram of 2 Pods labeled "pod-label: my-pod", in a Deployments called my-deployment, in a Service called my-service.](https://raw.githubusercontent.com/NimJay/intro-to-kustomize/main/pods-deployment-service-diagram.png)
 
 The diagram depicts the "base" set of Kubernetes resources this repository works with:
 * 1 `Service` of `type: LoadBalancer` which will allow public ingress.
