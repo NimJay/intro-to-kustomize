@@ -42,7 +42,7 @@ kubectl apply -k <path-to-folder>
 
 To remove the resources deloyed to your Kubernetes cluster, use:
 ```
-kubectl remove -k <path-to-folder>
+kubectl delete -k <path-to-folder>
 ```
 
 ## Additional Resources
