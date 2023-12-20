@@ -47,4 +47,5 @@ kubectl delete -k <path-to-folder>
 
 ## Additional Resources
 
-For further reading, check out the official [Kustomize references](https://kubectl.docs.kubernetes.io/references/kustomize/). For instance, check out the [reference documentation for `commonAnnotations`](https://kubectl.docs.kubernetes.io/references/kustomize/kustomization/commonannotations/).
+For further reading, check out the official [Kustomize references](https://kubectl.docs.kubernetes.io/references/kustomize/).
+For instance, check out the [reference documentation for `commonAnnotations`](https://kubectl.docs.kubernetes.io/references/kustomize/kustomization/commonannotations/).
