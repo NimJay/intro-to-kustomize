@@ -26,7 +26,8 @@ The `Deployment` runs 2 instances (`replicas: 2`) of a `Pod`.
 
 ## Build an Example
 
-To view the `kustomize build` output of an example, you do **not** need to install `kustomize` separately. `kustomize build` is built into `kubectl`. Use:
+To view the `kustomize build` output of an example, you do **not** need to install `kustomize` separately. 
+`kustomize build` is built into `kubectl`. Use:
 ```
 kubectl kustomize <path-to-folder>
 ```
